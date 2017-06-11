@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <table class="container" width="100%" align="left"  border="0" cellpadding="20" bgcolor = "#fff" cellspacing="5"  border-collapse="collapse" style="max-width: 550px; border: 1px solid #d8d8d8; font-family: Helvetica, Arial, sans-serif">
+            <tr>
+                <td>
+                    <a href="{{ frontend_login_url }}" target="_blank">
+                    <img
+                        style="padding-bottom: 20px;"
+                        src="{{ request_url_scheme }}://{{ request.get_host }}{% static 'images/email/wellcome.jpg'%}"
+                        alt="Logo Tandlr"
+                        width="auto"
+                        height="auto"
+                        border="0"
+                        alt="" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

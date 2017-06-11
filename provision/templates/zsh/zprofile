@@ -1,0 +1,8 @@
+# Activate the Python virtual environment
+source /home/vagrant/env/bin/activate
+
+# Go to src directory actumatically
+cd /home/vagrant/src
+
+# Set the Django settings envvar
+export DJANGO_SETTINGS_MODULE=tandlr.settings.devel

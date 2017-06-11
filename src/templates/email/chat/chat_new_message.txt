@@ -1,0 +1,1 @@
+{% firstof message.sender.username message.sender.name %} sent you a message!

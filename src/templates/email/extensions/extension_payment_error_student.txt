@@ -1,0 +1,7 @@
+Hello {{ session.teacher.get_short_name }},
+
+We have asked the student to verify their credit card information. 
+
+Payment failed
+
+Tandlr

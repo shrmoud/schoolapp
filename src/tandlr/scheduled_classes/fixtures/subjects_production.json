@@ -1,0 +1,211 @@
+[
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Finite Mathematics M-118",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 1
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Calculus M-119",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 2
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Microeconomics E-201",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 3
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Computer in Business K-201",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 4
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Basic Account Skills A-100",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 5
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Business Statistics S-301",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 6
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Elementary Composition W-131",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 7
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "I-Core Finance F-370",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 8
+},
+{
+    "fields": {
+        "status": true,
+        "university": 14,
+        "price_per_hour": "20.00",
+        "name": "Technology & Business Analysis K-303",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 9
+},
+{
+    "fields": {
+        "status": true,
+        "university": 15,
+        "price_per_hour": "20.00",
+        "name": "MATH 115",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 10
+},
+{
+    "fields": {
+        "status": true,
+        "university": 15,
+        "price_per_hour": "20.00",
+        "name": "MATH 116",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 11
+},
+{
+    "fields": {
+        "status": true,
+        "university": 15,
+        "price_per_hour": "20.00",
+        "name": "STATS 250",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 12
+},
+{
+    "fields": {
+        "status": true,
+        "university": 15,
+        "price_per_hour": "20.00",
+        "name": "EECS 183",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 13
+},
+{
+    "fields": {
+        "status": true,
+        "university": 17,
+        "price_per_hour": "40.00",
+        "name": "CHEM 101",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 14
+},
+{
+    "fields": {
+        "status": true,
+        "university": 17,
+        "price_per_hour": "40.00",
+        "name": "PHYSICS 135",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 15
+},
+{
+    "fields": {
+        "status": true,
+        "university": 17,
+        "price_per_hour": "40.00",
+        "name": "CS 111",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 16
+},
+{
+    "fields": {
+        "status": true,
+        "university": 21,
+        "price_per_hour": "20.00",
+        "name": "MATE 1",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 17
+},
+{
+    "fields": {
+        "status": true,
+        "university": 21,
+        "price_per_hour": "20.00",
+        "name": "MATE 2",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 18
+},
+{
+    "fields": {
+        "status": true,
+        "university": 21,
+        "price_per_hour": "20.00",
+        "name": "MATE 3",
+        "description": ""
+    },
+    "model": "scheduled_classes.subject",
+    "pk": 19
+}
+]

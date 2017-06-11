@@ -1,0 +1,24 @@
+Hello {{ booking.student.get_short_name }},
+
+Booking was not accepted 
+
+Unfortunately, the tutor was unable to accept your request. 
+
+Tandlr
+
+
+Your booking is rejected!
+
+
+Booking details
+    Tutor:          {{ booking.teacher.get_full_name }}
+    Service:        Individual session / {{ booking.subject }}
+    Time:           {{ fixed_date_time.time }}
+    Duration:       {{ booking.class_time | date:"H:i"}}
+    Location        {{ booking.place_description }}
+    Customer:       {{ booking.student.get_full_name }}
+                    {{ booking.student.email }}
+                    {% if booking.student.phone %}{{ booking.student.phone }}{% endif %}
+
+Booking number: {{ booking.pk }}
+

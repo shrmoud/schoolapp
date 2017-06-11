@@ -1,0 +1,7 @@
+Hello {{ booking.student.get_short_name }},
+
+Please verify your credit card information and try again. 
+
+Tandlr
+
+Payment failed

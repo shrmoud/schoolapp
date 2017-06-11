@@ -1,0 +1,123 @@
+[
+{
+    "fields": {
+        "initial": "IUB",
+        "last_modified": "2016-08-19T00:51:08.136Z",
+        "is_active": true,
+        "name": "Indiana University, Bloomington",
+        "created_date": "2016-04-26T21:40:27.843Z"
+    },
+    "model": "catalogues.university",
+    "pk": 14
+},
+{
+    "fields": {
+        "initial": "UM",
+        "last_modified": "2016-04-26T21:40:47.937Z",
+        "is_active": true,
+        "name": "University of Michigan",
+        "created_date": "2016-04-26T21:40:47.937Z"
+    },
+    "model": "catalogues.university",
+    "pk": 15
+},
+{
+    "fields": {
+        "initial": "OSU",
+        "last_modified": "2016-08-31T18:10:39.963Z",
+        "is_active": false,
+        "name": "Ohio State University",
+        "created_date": "2016-04-26T21:41:02.235Z"
+    },
+    "model": "catalogues.university",
+    "pk": 16
+},
+{
+    "fields": {
+        "initial": "NU",
+        "last_modified": "2016-04-26T21:41:20.598Z",
+        "is_active": true,
+        "name": "Northwestern University",
+        "created_date": "2016-04-26T21:41:20.598Z"
+    },
+    "model": "catalogues.university",
+    "pk": 17
+},
+{
+    "fields": {
+        "initial": "UW",
+        "last_modified": "2016-08-31T18:10:34.537Z",
+        "is_active": false,
+        "name": "University of Wisconsin",
+        "created_date": "2016-04-26T21:42:16.713Z"
+    },
+    "model": "catalogues.university",
+    "pk": 18
+},
+{
+    "fields": {
+        "initial": "UL",
+        "last_modified": "2016-08-31T18:10:29.488Z",
+        "is_active": false,
+        "name": "University of Loyola",
+        "created_date": "2016-04-26T21:42:31.693Z"
+    },
+    "model": "catalogues.university",
+    "pk": 19
+},
+{
+    "fields": {
+        "initial": "UDP",
+        "last_modified": "2016-08-31T18:10:24.647Z",
+        "is_active": false,
+        "name": "University of DePaul",
+        "created_date": "2016-04-26T21:42:48.526Z"
+    },
+    "model": "catalogues.university",
+    "pk": 20
+},
+{
+    "fields": {
+        "initial": "UC",
+        "last_modified": "2016-08-31T18:10:19.791Z",
+        "is_active": true,
+        "name": "University of Chicago",
+        "created_date": "2016-04-26T21:43:00.983Z"
+    },
+    "model": "catalogues.university",
+    "pk": 21
+},
+{
+    "fields": {
+        "initial": "UC",
+        "last_modified": "2016-08-31T18:10:14.249Z",
+        "is_active": false,
+        "name": "University of Illinois, Chicago",
+        "created_date": "2016-04-26T21:43:25.377Z"
+    },
+    "model": "catalogues.university",
+    "pk": 22
+},
+{
+    "fields": {
+        "initial": "UUC",
+        "last_modified": "2016-08-31T18:10:09.818Z",
+        "is_active": false,
+        "name": "University of Illinois, Urbana Champaign",
+        "created_date": "2016-04-26T21:43:42.388Z"
+    },
+    "model": "catalogues.university",
+    "pk": 23
+},
+{
+    "fields": {
+        "initial": "UD",
+        "last_modified": "2016-04-26T21:43:55.771Z",
+        "is_active": true,
+        "name": "University of Delaware",
+        "created_date": "2016-04-26T21:43:55.771Z"
+    },
+    "model": "catalogues.university",
+    "pk": 24
+}
+]

@@ -1,0 +1,77 @@
+Steps to create a card in tandlr
+
+Step one:Create Stripe token:
+
+import stripe
+
+from django.contrib.conf import settings
+
+# get stripe private key
+stripe.api_key = settings.STRIPE_PRIVATE_KEY
+
+# Creation of Stripe token
+stripe.Token.create(card={ 
+	"number": '4242424242424242',
+	"exp_month": 11,
+	"exp_year": 2019,
+	"cvc": '125'
+})
+
+This generates an object with the following information:
+
+<Token token id=tok_18GuFWJNKLANSXXXu6IrMQ6W at 0x7f8a0a7304f0> JSON: {
+  "card": {
+    "address_city": null,
+    "address_country": null,
+    "address_line1": null,
+    "address_line1_check": null, 
+    "address_line2": null,
+    "address_state": null,
+    "address_zip": null,
+    "address_zip_check": null,
+    "brand": "Visa",
+    "country": "US",
+    "cvc_check": "unchecked",
+    "dynamic_last4": null,
+    "exp_month": 11,
+    "exp_year": 2019,
+    "fingerprint": "EHSwsQJjSXidpxi3",
+    "funding": "credit",
+    "id": "card_18GuFWJNKLANSXXXo2KzmQXk",
+    "last4": "4242",
+    "metadata": {},
+    "name": null,
+    "object": "card",
+    "tokenization_method": null
+  },
+  "client_ip": "189.208.28.166",
+  "created": 1464629542,
+  "id": "tok_18GuFWJNKLANSXXXu6IrMQ6W",
+  "livemode": false,
+  "object": "token",
+  "type": "card",
+  "used": false
+}
+
+Step two:Create a card
+
+From the above information, get the id, and create a card with the following endpoint:
+
+http://tandlr.local:80/api/v2/cards
+
+The unique required field is card_token 
+We should use card token as the id value ("id": "tok_18GuFWJNKLANSXXXu6IrMQ6W")
+
+Step three: Return endpoint
+
+Immediately the endpoint returns a JSON as following:
+
+{
+  "id": 80,
+  "brand": "Visa",
+  "is_default": false,
+  "last_four_digits": "4242",
+  "name": null,
+  "exp_month": 11,
+  "exp_year": 2019
+}

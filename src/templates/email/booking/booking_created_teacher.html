@@ -1,0 +1,99 @@
+{% extends 'email/base_email.html' %}
+{% block content %}
+<tr>
+    <td style="text-align: center; text-transform: uppercase; font-size: 25px; font-weight: lighter; color: #241f17">
+      You have a new booking!
+    </td>
+</tr>
+<tr>
+    <td style="font-size: 17px; color: #888888; line-height: 1.3; font-weight: lighter;">
+        Please make sure to contact the tutee before the session to understand exactly what they need help with. When you arrive at the location of the meet up contact the tutee to find each other.
+    </td>
+</tr>
+<tr>
+    <td style="font-size: 17px; color: #888888; line-height: 1.3; font-weight: lighter;">
+      Good luck!
+    </td>
+</tr>
+<tr>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+    <td style="font-size: 20px; text-transform: uppercase; font-weight: lighter; color: #524f4b;">
+      Booking details:
+    </td>
+</tr>
+<tr>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+    <td>
+        <table style="font-family: Helvetica, Arial, sans-serif" border="0" align="left" border="0" width="80%">
+            <tr>
+                <td style="text-align: right; width: 30%; padding-right: 10px; color: #888888; font-weight: lighter;">
+                    Tutee:
+                </td>
+                <td style="width: 30%; color: #f29005; font-weight: lighter;">
+                    {{ booking.student.get_full_name }}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 30%; padding-right: 10px; color: #888888; font-weight: lighter;">
+                    Class:
+                </td>
+                <td style="width: 30%; color: #f29005; font-weight: lighter;">
+                    {{ booking.subject }}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 30%; padding-right: 10px; color: #888888; font-weight: lighter;">
+                    Time:
+                </td>
+                <td style="width: 30%; color: #f29005; font-weight: lighter;">
+                    {{ fixed_date_time.time }}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 30%; padding-right: 10px; color: #888888; font-weight: lighter;">
+                    Duration:
+                </td>
+                <td style="width: 30%; color: #f29005; font-weight: lighter;">
+                    {{ booking.class_time | date:"H:i"}}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 30%; padding-right: 10px; color: #888888; font-weight: lighter;">
+                    Location:
+                </td>
+                <td style="width: 30%; color: #f29005; font-weight: lighter;">
+                    {{ booking.place_description }}
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 30%; padding-right: 10px; color: #888888; font-weight: lighter;">
+                    Special Notes:
+                </td>
+                <td style="width: 30%; color: #f29005; font-weight: lighter;">
+                    {{ booking.class_detail }}
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+    <td>
+        <table align="left" width="80%">
+            <tr>
+              <td style="color: #888888; font-weight: lighter; text-align: left;">
+                For any further questions please contact us at info@tandlr.com
+              </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+  
+
+{% endblock %}

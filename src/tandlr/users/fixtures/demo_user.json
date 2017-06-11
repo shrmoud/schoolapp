@@ -1,0 +1,33 @@
+[
+{
+    "fields": {
+        "last_name": null,
+        "second_last_name": null,
+        "photo": "",
+        "is_staff": true,
+        "is_confirmation_email": false,
+        "user_permissions": [],
+        "register_date": "2016-09-23",
+        "is_superuser": true,
+        "last_login": "2016-09-23T21:03:08.370Z",
+        "is_student": true,
+        "email": "admin@admin.com",
+        "zip_code": null,
+        "username": "admin",
+        "description": null,
+        "is_active": true,
+        "phone": null,
+        "birthday": null,
+        "groups": [],
+        "last_modify_date": "2016-09-23",
+        "password": "pbkdf2_sha256$20000$TqnOrPsiESPC$Pd++0VjXaRmpuopgWGKrahu/ZtyoWvbS+WS9sSg5Ve8=",
+        "is_teacher": false,
+        "name": null,
+        "gender": null,
+        "university": null,
+        "thumbnail": ""
+    },
+    "model": "users.user",
+    "pk": 1
+}
+]

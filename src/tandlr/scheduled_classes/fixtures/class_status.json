@@ -1,0 +1,72 @@
+[
+	{
+		"fields": {
+			"name": "Rejected",
+			"description":"Rejected",
+			"status": true,
+            "order": 6
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":1
+	},
+	{
+		"fields": {
+			"name": "Scheduled",
+			"description":"Scheduled",
+			"status": true,
+            "order": 4
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":2
+	},
+	{
+		"fields": {
+			"name": "Accepted",
+			"description":"Accepted",
+			"status": true,
+            "order": 3
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":3
+	},
+	{
+		"fields": {
+			"name": "On course",
+			"description":"On course",
+			"status": true,
+            "order": 1
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":4
+	},
+	{
+		"fields": {
+			"name": "Ended",
+			"description":"Ended",
+			"status": true,
+            "order": 5
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":5
+	},
+	{
+		"fields": {
+			"name": "Pending",
+			"description":"Pending",
+			"status": true,
+            "order": 2
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":6
+	},
+	{
+		"fields": {
+			"name": "Cancelled",
+			"description":"Cancelled",
+			"status": true,
+            "order": 7
+		},
+		"model": "scheduled_classes.ClassStatus",
+		"pk":7
+	}
+]

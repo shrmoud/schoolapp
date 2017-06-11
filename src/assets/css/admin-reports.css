@@ -1,0 +1,16 @@
+input[name="_addanother"],input[name="_continue"],input[name="_saveasnew"]{
+    display: none;
+}
+
+.deletelink {
+    display: none;
+}
+
+.object-tools a.addlink {
+	display: none;
+}
+
+.field-notifications_sent_in_last_period {
+    pointer-events: none;
+    cursor: default;
+}

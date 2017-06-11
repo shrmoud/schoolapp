@@ -1,0 +1,22 @@
+Hello {{ booking.teacher.get_short_name }},
+
+
+You have a New Booking!
+
+
+Booking details
+    Service:        Individual session / {{ booking.subject }}
+
+
+Customer details    {{ booking.student.get_full_name }}
+                    {{ booking.student.email }}
+                    {% if booking.student.phone %}{{ booking.student.phone }}{% endif %}
+
+Booking number: {{ booking.pk }}
+
+{% if booking.class_detail %}
+Notes / special requirements: {{ booking.class_detail }}
+{% endif %}
+
+
+If you have any questions, email info@tandlr.com

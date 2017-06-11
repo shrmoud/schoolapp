@@ -1,0 +1,37 @@
+{
+    "vagrant": {
+        "user": "vagrant",
+        "hosts": ["192.168.33.40"],
+        "site_dir": "/home/vagrant/src/",
+        "django_settings": "tandlr.settings.devel",
+        "command_prefixes": [
+            "/home/vagrant/env/bin/activate"
+        ]
+    },
+    "staging": {
+        "user": "tandlr-dev",
+        "group": "tandlr-dev",
+        "hosts": ["tandlr.pythonballz.com"],
+        "site_dir": "/var/www/vhosts/tandlr.pythonballz.com/public/",
+        "certs_dir": "/var/www/vhosts/tandlr.pythonballz.com/certs/",
+        "uploads_dir": "/var/www/tandlr.pythonballz.com/storage/media",
+        "django_settings": "tandlr.settings.staging",
+        "command_prefixes": [
+            "/var/www/vhosts/tandlr.pythonballz.com/env/python/bin/activate",
+            "/var/www/vhosts/tandlr.pythonballz.com/env/envvars"
+        ]
+    },
+    "production": {
+        "user": "tandlr",
+        "group": "tandlr",
+        "hosts": ["tandlr.info"],
+        "site_dir": "/var/www/vhosts/tandlr.info/public/",
+        "certs_dir": "/var/www/vhosts/tandlr.info/certs/",
+        "uploads_dir": "/var/www/tandlr.info/storage/media",
+        "django_settings": "tandlr.settings.production",
+        "command_prefixes": [
+            "/var/www/vhosts/tandlr.info/env/python/bin/activate",
+            "/var/www/vhosts/tandlr.info/env/envvars"
+        ]
+    }
+}

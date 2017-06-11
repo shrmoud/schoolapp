@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page to test django sockets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <p>
+      <label for="notifications">Notifications:</label>
+      <input id="notifications" type="number" placeholder="0" value="0">
+    </p>
+    <p>
+      <input id="new" type="button" value="new mass-notifications">
+    </p>
+    <script type="text/javascript" src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <script type="text/javascript" src='{% static "js/notifications.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/swfobject.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/web_socket.js" %}'></script>
+  </body>
+</html>

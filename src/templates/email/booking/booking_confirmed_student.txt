@@ -1,0 +1,30 @@
+Hello {{ booking.student.get_short_name }},
+
+
+Thanks for using our services. Remember to take a look at the material a bit before the session, to maximize the effectiveness and also to bring any relevant materials. If you have any questions, comments, or concerns please take  a look at our "FAQs" page at http://www.tandlr.com/#!faq/sqmnq, or email info@tandlr.com if your question is still unanswered.
+
+Thanks again for using our services and we look forward to your success!
+
+Tandlr
+
+
+Your booking is confirmed!
+
+
+Booking details
+    Teacher:        {{ booking.teacher.get_full_name }}
+    Service:        Individual session / {{ booking.subject }}
+    Customer:       {{ booking.student.get_full_name }}
+                    {{ booking.student.email }}
+                    {% if booking.student.phone %}{{ booking.student.phone }}{% endif %}
+
+Booking number: {{ booking.pk }}
+
+{% if booking.class_detail %}
+Notes / special requirements: {{ booking.class_detail }}
+{% endif %}
+
+
+Cancellation pollicy
+
+No refund will be provided in case of booking cancellation less than 24 hours in advance or no-show.

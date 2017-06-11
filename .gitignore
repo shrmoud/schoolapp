@@ -1,0 +1,11 @@
+.cache/
+.tox/
+.vagrant/
+.DS_Store
+htmlcov/
+src/celerybeat-schedule
+*.coverage
+*.pyc
+*.sql
+*.sqlite
+*.swp

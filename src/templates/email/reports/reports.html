@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+    <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;">
+        <table class="container" width="100%" align="left"  border="0" cellpadding="20" bgcolor = "#fff" cellspacing="5"  border-collapse="collapse" style="font-family: Helvetica, Arial, sans-serif">
+            <tr>
+                <td>
+                    <table style="font-family: Helvetica, Arial, sans-serif;" border="0" width="95%" align="center">
+                        <tr>
+                            <td style="text-align: center; text-transform: uppercase; font-size: 25px; font-weight: lighter; color: #241f17">
+                                Reports session sales <br/>{{ report_timespan.day  }} / {{ report_timespan.month  }} / {{ report_timespan.year }} - {{ yesterday.day }} / {{ yesterday.month }} / {{ yesterday.year }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table border="1" width="100%" style="margin-top: 45px;">
+                                    <tr style="text-align: center;">
+                                        <th colspan="{{ first_report_headers|length }}">Consolidated Report</th>
+                                    </tr>
+                                    <tr>
+                                        {% for header in first_report_headers %}
+                                        <th style="font-weight: bold;">{{ header }}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% for row in first_report_rows %}
+                                        <tr>
+                                            {% for element in row %}
+                                                <td>{{ element }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                                </table>
+
+                                <table border="1" width="100%" style="margin-top: 45px;">
+                                    <tr style="text-align: center;">
+                                        <th colspan="{{ second_report_headers|length }}">Detailed Report</th>
+                                    </tr>
+                                    <tr>
+                                        {% for header in second_report_headers %}
+                                        <th style="font-weight: bold;">{{ header }}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% for row in second_report_rows %}
+                                        <tr>
+                                            {% for element in row %}
+                                                <td>{{ element }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table> 
+    </body>
+</html>

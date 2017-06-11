@@ -1,0 +1,6 @@
+-r base.txt
+
+# Development tools
+django-debug-toolbar
+pyparsing==1.5.7
+pydot==1.0.2

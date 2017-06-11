@@ -1,0 +1,5 @@
+-r base.txt
+
+# Staging packages
+opbeat
+opbeatcli
